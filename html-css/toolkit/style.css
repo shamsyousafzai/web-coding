@@ -1,0 +1,44 @@
+.tiptext {
+    width: auto;
+    font-family: 'ProximaNova', Helvetica;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    /*line-height: 175%;*/
+    color: rgb(39, 44, 45);
+    cursor: help !important;
+    position: relative;
+}
+
+.description {
+    border:1px solid #e3e3e3;
+    background: white;
+    width:auto;
+    max-width:275px;
+    height:auto;
+    padding:10px;
+    font-family: 'ProximaNova', Helvetica;
+    font-weight: 200;
+    color: rgb(39, 44, 45);
+    font-size: 13px;
+    top:29px;
+    left: 120px;
+    z-index:500;
+    opacity:0;
+    /*visibility:hidden;*/
+    position:absolute;
+    -webkit-transition: opacity 0.9s ease-out;
+    -moz-transition: opacity 0.9s ease-out;
+    -ms-transition: opacity 0.9s ease-out;
+    -o-transition: opacity 0.9s ease-out;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.tiptext:hover .description { /* display tooltip on hover */
+    opacity:1;
+    -webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -ms-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+}
